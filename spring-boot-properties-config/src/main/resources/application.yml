@@ -1,0 +1,28 @@
+thirdpart:
+  componentAppId: wxf4f2bf38918e068f
+  componentAppSecret: f55bf2b4ee16caebe7afa740d7457924
+  redirectUrl: https%3a%2f%2fwww.yuxiaor.com%2fopen%2fwx%2ftest%2f3part%2fredirect%2f
+  getAuthorizerListLimit: 500
+  redisLockExpire: 5
+  refreshTimeout: 3000
+wechat:
+  yuxiaoer:
+    aesKey: ''
+    appId: wxd459be97b90f047b
+    appSecret: ba5387b3876b9043d663a3031c46a9cc
+    encrypt: false
+    redirectUri: http%3A%2F%2Fwww.yuxiaor.com%2Fwechat%2Fredirect%2F
+    token: wxd459be97b90f047b
+  buerzu:
+    aesKey: HrepgGMo60I40qKEuypwoiUrKqGmfCX1bjTe9MX70tz
+    appId: wxd459be97b90f047b
+    appSecret: ba5387b3876b9043d663a3031c46a9cc
+    encrypt: false
+    name: 不二租体验下吧
+    redirectUri: http%3A%2F%2Fwww.yuxiaor.com%2Fwechat%2Fredirect%2Fc%2F
+    token: wxd459be97b90f047b
+    wechatId: ''
+  contextUrl: http://10.10.2.1:8080
+  authorizeUrl: http%3A%2F%2Fwww.yuxiaor.com%2Fwechat%2Fredirect%2Fc%2F
+  woaRouteUrl: '%2Fv2%2F%23%21%2Fbe%2Fsettings%2Fregular%2Fofficial-allocation%2Fwechat'
+  wxaRouteUrl: '%2Fv2%2F%23%21%2Fbe%2Fsettings%2Fregular%2Fofficial-allocation%2Fminiprogram'
