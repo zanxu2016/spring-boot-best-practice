@@ -12,6 +12,8 @@
         <module>spring-boot-param-valid</module>
         <module>spring-boot-properties-config</module>
         <module>spring-boot-aop-web-log</module>
+        <module>spring-boot-mapstruct</module>
+        <module>spring-boot-redis-demo</module>
     </modules>
 
     <parent>
