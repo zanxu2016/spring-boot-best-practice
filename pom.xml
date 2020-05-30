@@ -14,6 +14,8 @@
         <module>spring-boot-aop-web-log</module>
         <module>spring-boot-mapstruct</module>
         <module>spring-boot-redis</module>
+        <module>spring-boot-rabbit</module>
+        <module>spring-boot-mybatis</module>
     </modules>
 
     <parent>

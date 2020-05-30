@@ -6,6 +6,7 @@ import info.luckydog.springboot.paramvalid.validator.group.Update;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.constraints.NotNull;
 
 /**
@@ -15,7 +16,7 @@ import javax.validation.constraints.NotNull;
  * @since 2019/12/19
  */
 @RestController
-@RequestMapping
+@RequestMapping("user")
 @Validated
 public class UserController {
 
@@ -26,7 +27,7 @@ public class UserController {
      * @param userDTO
      * @return ResultDTO
      */
-    @PostMapping("user")
+    @PostMapping("")
     public ResultDTO userRegister(@RequestBody @Validated UserDTO userDTO) {
         return ResultDTO.success();
     }
@@ -38,7 +39,7 @@ public class UserController {
      * @param userDTO
      * @return ResultDTO
      */
-    @PutMapping("user")
+    @PutMapping("")
     public ResultDTO userUpdate(@RequestBody @Validated(Update.class) UserDTO userDTO) {
         return ResultDTO.success();
     }
@@ -50,8 +51,13 @@ public class UserController {
      * @param userId
      * @return ResultDTO
      */
-    @DeleteMapping("user")
+    @DeleteMapping("")
     public ResultDTO userDelete(@RequestParam("userId") @NotNull(message = "用户ID不能为空") Long userId) {
         return ResultDTO.success();
+    }
+
+    @GetMapping("receive")
+    public void receiveRedirect(HttpServletRequest request) {
+        System.out.println("request params: " + request.getQueryString());
     }
 }

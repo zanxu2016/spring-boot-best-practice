@@ -6,6 +6,10 @@ import info.luckydog.springboot.aopweblog.model.UserDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
 /**
  * UserController
  *
@@ -28,5 +32,19 @@ public class UserController {
     public ResultDTO test(@ModelAttribute UserDTO userDTO) {
         log.info("user test, request params: {}", userDTO);
         return new ResultDTO<>(userDTO);
+    }
+
+    @GetMapping("send")
+    public void sendRedirect(HttpServletRequest request, HttpServletResponse response) {
+        System.out.println("request params: " + request.getQueryString());
+
+        String redirectUrl = "http://localhost:8002/user/receive?test=111";
+
+        try {
+            response.sendRedirect(redirectUrl);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }

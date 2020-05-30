@@ -2,6 +2,7 @@ package info.luckydog.springboot.propconfig.controller;
 
 import info.luckydog.springboot.propconfig.config.WechatConfig;
 import info.luckydog.springboot.propconfig.config.WechatValueConfig;
+import info.luckydog.springboot.propconfig.util.ConfigUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,6 +29,8 @@ public class WechatController {
     public Object getProps(@RequestParam(value = "id", defaultValue = "0") String id) {
         log.info("getProps, id: {}", id);
         switch (id) {
+            case "0":
+                return new ConfigUtil().getProps();// 此处会报NPE
             case "1":
                 return wechatConfig;
             case "2":
