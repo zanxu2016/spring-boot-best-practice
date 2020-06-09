@@ -3,12 +3,14 @@ package info.luckydog.mybatistest.service.impl;
 import info.luckydog.mybatistest.entity.User;
 import info.luckydog.mybatistest.mapper.UserMapper;
 import info.luckydog.mybatistest.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@Slf4j
 public class UserServiceImpl implements UserService {
 
     @Autowired
@@ -16,6 +18,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> getUserList() {
+        log.info("getUserList...");
         return userMapper.getUserList();
     }
 
