@@ -1,7 +1,7 @@
-package info.luckydog.mybatistest.mapper;
+package info.luckydog.mybatis.mapper;
 
-import info.luckydog.mybatistest.entity.User;
-import info.luckydog.mybatistest.mapper.provider.UpdateUserProvider;
+import info.luckydog.mybatis.entity.User;
+import info.luckydog.mybatis.mapper.provider.UpdateUserProvider;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

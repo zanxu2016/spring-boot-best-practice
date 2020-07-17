@@ -17,6 +17,7 @@
         <module>spring-boot-rabbit</module>
         <module>spring-boot-mybatis</module>
         <module>spring-boot-elasticsearch</module>
+        <module>spring-boot-schedule</module>
     </modules>
 
     <parent>

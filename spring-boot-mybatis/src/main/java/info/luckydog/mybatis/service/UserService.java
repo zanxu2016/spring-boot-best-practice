@@ -1,6 +1,6 @@
-package info.luckydog.mybatistest.service;
+package info.luckydog.mybatis.service;
 
-import info.luckydog.mybatistest.entity.User;
+import info.luckydog.mybatis.entity.User;
 
 import java.util.List;
 

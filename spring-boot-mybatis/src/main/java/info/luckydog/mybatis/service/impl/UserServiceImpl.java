@@ -1,8 +1,8 @@
-package info.luckydog.mybatistest.service.impl;
+package info.luckydog.mybatis.service.impl;
 
-import info.luckydog.mybatistest.entity.User;
-import info.luckydog.mybatistest.mapper.UserMapper;
-import info.luckydog.mybatistest.service.UserService;
+import info.luckydog.mybatis.entity.User;
+import info.luckydog.mybatis.mapper.UserMapper;
+import info.luckydog.mybatis.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

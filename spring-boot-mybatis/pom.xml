@@ -46,6 +46,13 @@
             <version>1.18.12</version>
         </dependency>
 
+        <!-- 接口文档，swagger的替代方案 -->
+        <dependency>
+            <groupId>io.github.yedaxia</groupId>
+            <artifactId>japidocs</artifactId>
+            <version>1.4</version>
+        </dependency>
+
     </dependencies>
 
 </project>

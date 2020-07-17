@@ -1,6 +1,6 @@
-package info.luckydog.mybatistest.mapper.provider;
+package info.luckydog.mybatis.mapper.provider;
 
-import info.luckydog.mybatistest.entity.User;
+import info.luckydog.mybatis.entity.User;
 
 import java.util.Map;
 

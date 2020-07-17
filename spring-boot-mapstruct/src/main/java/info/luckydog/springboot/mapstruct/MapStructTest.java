@@ -38,6 +38,8 @@ public class MapStructTest {
         assertThat(carDto.getMake(), equalTo("Morris"));
         assertThat(carDto.getSeatCount(), equalTo(5));
         assertThat(carDto.getType(), equalTo("SEDAN"));
+        assertThat(carDto.getDesc(), equalTo(car.getMake() + "\n" + car.getType()));
+        System.out.println(carDto.getDesc());
 
         // reverse
         Car carSource = CarMapper.INSTANCE.fromCarDto(carDto);
@@ -88,8 +90,6 @@ public class MapStructTest {
 
         System.out.println("str: " + str);
 
-
-        
 
     }
 
